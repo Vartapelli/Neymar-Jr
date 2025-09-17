@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(to bottom, #fdfaf3,);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+ 
+.neymar-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+   
+    min-height: 100vh;
+  }
+ 
+  .intro-text {
+    max-width: 50%;
+  }
+ 
+  .intro-text h1 {
+    font-size: 4rem;
+    color: #EDBE19;
+    margin-bottom: 10px;
+  }
+ 
+  .intro-text h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+ 
+  .intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+ 
+  .btn-neymar {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #006400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+ 
+  .btn-neymar:hover {
+    background: #EDBE19;
+  }
+ 
+  .intro-image img {
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+ 
+  #neymar-timeline {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px 0;
+  }
+ 
+  #neymar-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #006400;
+    transform: translateX(-50%);
+  }
+ 
+  .neymar-moment {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    position: relative;
+    width: 100%;
+  }
+ 
+  .lado-santos {
+    justify-content: flex-start;
+  }
+ 
+  .lado-barca {
+    justify-content: flex-end;
+  }
+ 
+  .moment-desc {
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 16px;
+    max-width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+ 
+  .moment-desc h2 {
+    color: #006400;
+    margin: 0 0 10px;
+  }
+ 
+  .neymar-moment img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+ 
+  .moment-desc:hover {
+    background: #f0f8f0;
+    transform: scale(1.05);
+  }
+ 
+  footer {
+    text-align: center;
+    padding: 30px 10px;
+    background: #eee;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #444;
+  }
+ 
+  @media (max-width: 900px) {
+    .neymar-intro {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 40px 20px;
+    }
+ 
+    .intro-text {
+      max-width: 100%;
+    }
+ 
+    .intro-image img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+    #neymar-timeline::before {
+      left: 20px;
+    }
+ 
+    .neymar-moment {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 40px;
+    }
+ 
+    .lado-barca {
+      justify-content: flex-start;
+    }
+ 
+    .neymar-moment img {
+      margin: 10px 0;
+      width: 100px;
+      height: 100px;
+    }
+ 
+    .moment-desc {
+      max-width: 100%;
+    }
+  }
